@@ -11,10 +11,10 @@ IMG_SIZE = 64  # Resize Images
 training_data = []
 testing_data = []
 
-'''
+#'''
 def create_training_data():
    count = 0
-   directory = r"C:/Users/Adam/Desktop/Face Datasets"
+   directory = r"F:/AE/Datasets"
    categories = ["Anime", "Humans"]
    for cat in categories:
        path = os.path.join(directory, cat)  # Path To folder containing images
@@ -70,7 +70,7 @@ training_labels = pickle.load(pickle_in)
 
 def create_test_data():
    count = 0
-   directory = r"F:/Face Datasets"
+   directory = r"F:/AE/Datasets"
    categories = ["AnimeT", "HumansT"]
    for cat in categories:
        path = os.path.join(directory, cat)  # Path To folder containing images
